@@ -97,7 +97,7 @@
 											<ChildItems>
 												<Button name="ИзменитьМаркетплейс_WILDBERRIES" id="772">
 													<Type>UsualButton</Type>
-													<Representation>PictureAndText</Representation>
+													<Representation>Picture</Representation>
 													<Height>1</Height>
 													<CommandName>Form.Command.ИзменитьМаркетплейс_WILDBERRIES</CommandName>
 													<BorderColor>style:ButtonBackColor</BorderColor>
@@ -115,7 +115,7 @@
 												</Button>
 												<Button name="ИзменитьМаркетплейс_OZON" id="770">
 													<Type>UsualButton</Type>
-													<Representation>PictureAndText</Representation>
+													<Representation>Picture</Representation>
 													<Height>1</Height>
 													<CommandName>Form.Command.ИзменитьМаркетплейс_OZON</CommandName>
 													<BorderColor>style:ButtonBackColor</BorderColor>
@@ -133,7 +133,7 @@
 												</Button>
 												<Button name="ИзменитьМаркетплейс_YANDEX_MARKET" id="774">
 													<Type>UsualButton</Type>
-													<Representation>PictureAndText</Representation>
+													<Representation>Picture</Representation>
 													<Height>1</Height>
 													<CommandName>Form.Command.ИзменитьМаркетплейс_YANDEX_MARKET</CommandName>
 													<BorderColor>style:ButtonBackColor</BorderColor>
@@ -151,7 +151,7 @@
 												</Button>
 												<Button name="ИзменитьМаркетплейс_SBER_MEGA_MARKET" id="776">
 													<Type>UsualButton</Type>
-													<Representation>PictureAndText</Representation>
+													<Representation>Picture</Representation>
 													<Height>1</Height>
 													<CommandName>Form.Command.ИзменитьМаркетплейс_SBER_MEGA_MARKET</CommandName>
 													<BorderColor>style:ButtonBackColor</BorderColor>
@@ -167,16 +167,9 @@
 													</Title>
 													<ExtendedTooltip name="ИзменитьМаркетплейс_SBER_MEGA_MARKETРасширеннаяПодсказка" id="777"/>
 												</Button>
-											</ChildItems>
-										</UsualGroup>
-										<UsualGroup name="Группа13" id="816">
-											<Behavior>Usual</Behavior>
-											<ShowTitle>false</ShowTitle>
-											<ExtendedTooltip name="Группа13РасширеннаяПодсказка" id="817"/>
-											<ChildItems>
 												<Button name="ИзменитьМаркетплейс_AVITO" id="890">
 													<Type>UsualButton</Type>
-													<Representation>PictureAndText</Representation>
+													<Representation>Picture</Representation>
 													<Height>1</Height>
 													<CommandName>Form.Command.ИзменитьМаркетплейс_AVITO</CommandName>
 													<BorderColor>style:ButtonBackColor</BorderColor>
@@ -194,7 +187,7 @@
 												</Button>
 												<Button name="ИзменитьМаркетплейс_LEROY_MERLIN" id="810">
 													<Type>UsualButton</Type>
-													<Representation>PictureAndText</Representation>
+													<Representation>Picture</Representation>
 													<Height>1</Height>
 													<CommandName>Form.Command.ИзменитьМаркетплейс_LEROY_MERLIN</CommandName>
 													<BorderColor>style:ButtonBackColor</BorderColor>
@@ -212,7 +205,7 @@
 												</Button>
 												<Button name="ИзменитьМаркетплейс_DETMIR" id="812">
 													<Type>UsualButton</Type>
-													<Representation>PictureAndText</Representation>
+													<Representation>Picture</Representation>
 													<Height>1</Height>
 													<CommandName>Form.Command.ИзменитьМаркетплейс_DETMIR</CommandName>
 													<BorderColor>style:ButtonBackColor</BorderColor>
@@ -230,7 +223,7 @@
 												</Button>
 												<Button name="ИзменитьМаркетплейс_KAZAN_EXPRESS" id="814">
 													<Type>UsualButton</Type>
-													<Representation>PictureAndText</Representation>
+													<Representation>Picture</Representation>
 													<Height>1</Height>
 													<CommandName>Form.Command.ИзменитьМаркетплейс_KAZAN_EXPRESS</CommandName>
 													<BorderColor>style:ButtonBackColor</BorderColor>
@@ -248,7 +241,7 @@
 												</Button>
 												<Button name="ИзменитьМаркетплейс_ALIE_EXPRESS" id="886">
 													<Type>UsualButton</Type>
-													<Representation>PictureAndText</Representation>
+													<Representation>Picture</Representation>
 													<Height>1</Height>
 													<CommandName>Form.Command.ИзменитьМаркетплейс_ALIE_EXPRESS</CommandName>
 													<BorderColor>style:ButtonBackColor</BorderColor>
@@ -266,17 +259,24 @@
 												</Button>
 											</ChildItems>
 										</UsualGroup>
-										<InputField name="Маркетплейс" id="659">
-											<DataPath>Объект.Маркетплейс</DataPath>
-											<Visible>false</Visible>
-											<ChoiceButton>true</ChoiceButton>
-											<ClearButton>true</ClearButton>
-											<ContextMenu name="МаркетплейсКонтекстноеМеню" id="660"/>
-											<ExtendedTooltip name="МаркетплейсРасширеннаяПодсказка" id="661"/>
-											<Events>
-												<Event name="StartChoice">МаркетплейсНачалоВыбора</Event>
-											</Events>
-										</InputField>
+										<UsualGroup name="Группа13" id="816">
+											<Behavior>Usual</Behavior>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа13РасширеннаяПодсказка" id="817"/>
+											<ChildItems>
+												<InputField name="Маркетплейс" id="659">
+													<DataPath>Объект.Маркетплейс</DataPath>
+													<Visible>false</Visible>
+													<ChoiceButton>true</ChoiceButton>
+													<ClearButton>true</ClearButton>
+													<ContextMenu name="МаркетплейсКонтекстноеМеню" id="660"/>
+													<ExtendedTooltip name="МаркетплейсРасширеннаяПодсказка" id="661"/>
+													<Events>
+														<Event name="StartChoice">МаркетплейсНачалоВыбора</Event>
+													</Events>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
 										<UsualGroup name="Группа10" id="764">
 											<Behavior>Usual</Behavior>
 											<ShowTitle>false</ShowTitle>
@@ -755,12 +755,14 @@
 										</v8:item>
 									</Title>
 									<EditMode>EnterOnInput</EditMode>
+									<ChoiceButton>true</ChoiceButton>
 									<ContextMenu name="ЗаказыНоменклатураКонтекстноеМеню" id="121"/>
 									<ExtendedTooltip name="ЗаказыНоменклатураРасширеннаяПодсказка" id="122"/>
 								</InputField>
 								<InputField name="ЗаказыХарактеристика" id="910">
 									<DataPath>Объект.Заказы.Характеристика</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<ChoiceButton>true</ChoiceButton>
 									<ContextMenu name="ЗаказыХарактеристикаКонтекстноеМеню" id="911"/>
 									<ExtendedTooltip name="ЗаказыХарактеристикаРасширеннаяПодсказка" id="912"/>
 								</InputField>
@@ -899,7 +901,7 @@
 							<ChildItems>
 								<Button name="ИзменитьServices_WILDBERRIES" id="873">
 									<Type>UsualButton</Type>
-									<Representation>PictureAndText</Representation>
+									<Representation>Picture</Representation>
 									<Height>1</Height>
 									<CommandName>Form.Command.ИзменитьServices_WILDBERRIES</CommandName>
 									<BorderColor>style:ButtonBackColor</BorderColor>
@@ -917,7 +919,7 @@
 								</Button>
 								<Button name="ИзменитьServices_OZON" id="852">
 									<Type>UsualButton</Type>
-									<Representation>PictureAndText</Representation>
+									<Representation>Picture</Representation>
 									<Height>1</Height>
 									<CommandName>Form.Command.ИзменитьServices_OZON</CommandName>
 									<BorderColor>style:ButtonBackColor</BorderColor>
@@ -935,7 +937,7 @@
 								</Button>
 								<Button name="ИзменитьServices_YANDEX_MARKET" id="854">
 									<Type>UsualButton</Type>
-									<Representation>PictureAndText</Representation>
+									<Representation>Picture</Representation>
 									<Height>1</Height>
 									<CommandName>Form.Command.ИзменитьServices_YANDEX_MARKET</CommandName>
 									<BorderColor>style:ButtonBackColor</BorderColor>
@@ -953,7 +955,7 @@
 								</Button>
 								<Button name="ИзменитьServices_SBER_MEGA_MARKET" id="856">
 									<Type>UsualButton</Type>
-									<Representation>PictureAndText</Representation>
+									<Representation>Picture</Representation>
 									<Height>1</Height>
 									<CommandName>Form.Command.ИзменитьServices_SBER_MEGA_MARKET</CommandName>
 									<BorderColor>style:ButtonBackColor</BorderColor>
@@ -971,7 +973,7 @@
 								</Button>
 								<Button name="ИзменитьServices_ONE_C" id="864">
 									<Type>UsualButton</Type>
-									<Representation>PictureAndText</Representation>
+									<Representation>Picture</Representation>
 									<Height>1</Height>
 									<CommandName>Form.Command.ИзменитьServices_ONE_C</CommandName>
 									<BorderColor>style:ButtonBackColor</BorderColor>
@@ -987,16 +989,9 @@
 									</Title>
 									<ExtendedTooltip name="ИзменитьServices_ONE_CРасширеннаяПодсказка" id="865"/>
 								</Button>
-							</ChildItems>
-						</UsualGroup>
-						<UsualGroup name="Группа16" id="858">
-							<Behavior>Usual</Behavior>
-							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="Группа16РасширеннаяПодсказка" id="859"/>
-							<ChildItems>
 								<Button name="ИзменитьServices_AVITO" id="892">
 									<Type>UsualButton</Type>
-									<Representation>PictureAndText</Representation>
+									<Representation>Picture</Representation>
 									<Height>1</Height>
 									<CommandName>Form.Command.ИзменитьServices_AVITO</CommandName>
 									<BorderColor>style:ButtonBackColor</BorderColor>
@@ -1014,7 +1009,7 @@
 								</Button>
 								<Button name="ИзменитьServices_LEROY_MERLIN" id="860">
 									<Type>UsualButton</Type>
-									<Representation>PictureAndText</Representation>
+									<Representation>Picture</Representation>
 									<Height>1</Height>
 									<CommandName>Form.Command.ИзменитьServices_LEROY_MERLIN</CommandName>
 									<BorderColor>style:ButtonBackColor</BorderColor>
@@ -1032,7 +1027,7 @@
 								</Button>
 								<Button name="ИзменитьServices_DETMIR" id="862">
 									<Type>UsualButton</Type>
-									<Representation>PictureAndText</Representation>
+									<Representation>Picture</Representation>
 									<Height>1</Height>
 									<CommandName>Form.Command.ИзменитьServices_DETMIR</CommandName>
 									<BorderColor>style:ButtonBackColor</BorderColor>
@@ -1050,7 +1045,7 @@
 								</Button>
 								<Button name="ИзменитьServices_KAZAN_EXPRESS" id="866">
 									<Type>UsualButton</Type>
-									<Representation>PictureAndText</Representation>
+									<Representation>Picture</Representation>
 									<Height>1</Height>
 									<CommandName>Form.Command.ИзменитьServices_KAZAN_EXPRESS</CommandName>
 									<BorderColor>style:ButtonBackColor</BorderColor>
@@ -1068,7 +1063,7 @@
 								</Button>
 								<Button name="ИзменитьServices_ALIE_EXPRESS" id="888">
 									<Type>UsualButton</Type>
-									<Representation>PictureAndText</Representation>
+									<Representation>Picture</Representation>
 									<Height>1</Height>
 									<CommandName>Form.Command.ИзменитьServices_ALIE_EXPRESS</CommandName>
 									<BorderColor>style:ButtonBackColor</BorderColor>
@@ -1581,12 +1576,14 @@
 								<InputField name="ТоварыНоменклатура" id="81">
 									<DataPath>Объект.Товары.Номенклатура</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<ChoiceButton>true</ChoiceButton>
 									<ContextMenu name="ТоварыНоменклатураКонтекстноеМеню" id="82"/>
 									<ExtendedTooltip name="ТоварыНоменклатураРасширеннаяПодсказка" id="83"/>
 								</InputField>
 								<InputField name="ТоварыХарактеристика" id="845">
 									<DataPath>Объект.Товары.Характеристика</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<ChoiceButton>true</ChoiceButton>
 									<ContextMenu name="ТоварыХарактеристикаКонтекстноеМеню" id="846"/>
 									<ExtendedTooltip name="ТоварыХарактеристикаРасширеннаяПодсказка" id="847"/>
 								</InputField>
@@ -1667,6 +1664,7 @@
 								<InputField name="ТоварыСклад" id="656">
 									<DataPath>Объект.Товары.Склад</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<ChoiceButton>true</ChoiceButton>
 									<ContextMenu name="ТоварыСкладКонтекстноеМеню" id="657"/>
 									<ExtendedTooltip name="ТоварыСкладРасширеннаяПодсказка" id="658"/>
 								</InputField>
@@ -2266,6 +2264,15 @@
 									</Title>
 									<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="293"/>
 									<ChildItems>
+										<CheckBoxField name="ИспользоватьРасширеннуюНастройкуЗаказов" id="725">
+											<DataPath>Объект.ИспользоватьРасширеннуюНастройкуЗаказов</DataPath>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ИспользоватьРасширеннуюНастройкуЗаказовКонтекстноеМеню" id="726"/>
+											<ExtendedTooltip name="ИспользоватьРасширеннуюНастройкуЗаказовРасширеннаяПодсказка" id="727"/>
+											<Events>
+												<Event name="OnChange">ИспользоватьРасширеннуюНастройкуЗаказовПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
 										<InputField name="ВидОперацииЗК" id="281">
 											<DataPath>Объект.ВидОперацииЗК</DataPath>
 											<Title>
@@ -2281,15 +2288,6 @@
 												<Event name="StartChoice">ВидОперацииЗКНачалоВыбора</Event>
 											</Events>
 										</InputField>
-										<CheckBoxField name="ИспользоватьРасширеннуюНастройкуЗаказов" id="725">
-											<DataPath>Объект.ИспользоватьРасширеннуюНастройкуЗаказов</DataPath>
-											<CheckBoxType>Auto</CheckBoxType>
-											<ContextMenu name="ИспользоватьРасширеннуюНастройкуЗаказовКонтекстноеМеню" id="726"/>
-											<ExtendedTooltip name="ИспользоватьРасширеннуюНастройкуЗаказовРасширеннаяПодсказка" id="727"/>
-											<Events>
-												<Event name="OnChange">ИспользоватьРасширеннуюНастройкуЗаказовПриИзменении</Event>
-											</Events>
-										</CheckBoxField>
 										<InputField name="ВыбКонтрагент" id="308">
 											<DataPath>Объект.ВыбКонтрагент</DataPath>
 											<ContextMenu name="ВыбКонтрагентКонтекстноеМеню" id="309"/>
@@ -2365,16 +2363,19 @@
 													<ChoiceButton>false</ChoiceButton>
 													<ContextMenu name="РасширеннаяНастройкаЗаказовМаркетплейсКонтекстноеМеню" id="917"/>
 													<ExtendedTooltip name="РасширеннаяНастройкаЗаказовМаркетплейсРасширеннаяПодсказка" id="918"/>
-													<Events>
-														<Event name="StartListChoice">РасширеннаяНастройкаЗаказовМаркетплейсНачалоВыбораИзСписка</Event>
-													</Events>
 												</InputField>
-												<InputField name="РасширеннаяНастройкаЗаказовОрганизация" id="716">
-													<DataPath>1/0:e7456596-2a55-453b-82b6-32fbb2d72219/0:2bbb822c-7172-4536-a1bd-fdf674d564b3</DataPath>
-													<Visible>false</Visible>
+												<InputField name="РасширеннаяНастройкаЗаказовВидОперацииЗК" id="928">
+													<DataPath>Объект.РасширеннаяНастройкаЗаказов.ВидОперацииЗК</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Операция по Заказу клиента</v8:content>
+														</v8:item>
+													</Title>
 													<EditMode>EnterOnInput</EditMode>
-													<ContextMenu name="РасширеннаяНастройкаЗаказовОрганизацияКонтекстноеМеню" id="717"/>
-													<ExtendedTooltip name="РасширеннаяНастройкаЗаказовОрганизацияРасширеннаяПодсказка" id="718"/>
+													<DropListButton>true</DropListButton>
+													<ContextMenu name="РасширеннаяНастройкаЗаказовВидОперацииЗККонтекстноеМеню" id="929"/>
+													<ExtendedTooltip name="РасширеннаяНастройкаЗаказовВидОперацииЗКРасширеннаяПодсказка" id="930"/>
 												</InputField>
 												<InputField name="РасширеннаяНастройкаЗаказовКонтрагент" id="719">
 													<DataPath>Объект.РасширеннаяНастройкаЗаказов.Контрагент</DataPath>
